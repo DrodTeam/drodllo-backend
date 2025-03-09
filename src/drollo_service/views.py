@@ -23,5 +23,5 @@
 from django.http import JsonResponse
 
 
-def health_check():
+def health_check(request):  # noqa: ARG001 fmt: off
     return JsonResponse({"status": "ok"})
